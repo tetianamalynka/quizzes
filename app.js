@@ -10,7 +10,7 @@ app.use(express.json({ extened: true }))
 mongoose.set('strictQuery', true)
 
 // routes-api
-//
+app.use('/api/v1/auth', require('./routes/auth.routes'))
 
 async function start() {
     try {

@@ -1,4 +1,5 @@
 {
     "port": "",
-    "mongoUri": ""
+    "mongoUri": "",
+    "jwtsecret": ""
 }
