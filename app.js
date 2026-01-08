@@ -11,6 +11,8 @@ mongoose.set('strictQuery', true)
 
 // routes-api
 app.use('/api/v1/auth', require('./routes/auth.routes'))
+app.use('/api/v1/tests', require('./routes/test.routes'))
+app.use('/api/v1/users', require('./routes/user.routes'))
 
 async function start() {
     try {
