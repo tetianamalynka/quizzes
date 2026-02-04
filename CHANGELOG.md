@@ -7,7 +7,7 @@
 - Express server configuration
 - MongoDB connection (Mongoose)
 
-## [0.1.1] - 2026-01-07
+## [0.2.0] - 2026-01-07
 
 ### Added
 - User, Test, Question and Answer models
@@ -15,7 +15,7 @@
   - POST /api/v1/auth/register
   - POST /api/v1/auth/login
 
-## [0.1.2] - 2026-01-08
+## [0.3.0] - 2026-01-08
 
 ### Added
 - Authentication middleware

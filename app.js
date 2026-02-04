@@ -4,7 +4,7 @@ const moment = require('moment')
 const config = require('config')
 
 const app = express()
-const PORT = config.get('port') || 5000
+const PORT = config.get('port') || 8080
 
 app.use(express.json({ extened: true }))
 mongoose.set('strictQuery', true)

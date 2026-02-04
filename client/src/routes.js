@@ -10,13 +10,15 @@ import { AccountLoginPage } from './pages/AccountLoginPage'
 // СТорінки які доступні авторизованому користувачу
 
 import { HomePage } from './pages/HomePage'
+import { TestByIdPage } from './pages/TestByIdPage'
 
-export const useRoutes = (isAuthentificated) => {
-    if (isAuthentificated) {
+export const useRoutes = (isAuthenticated) => {
+    if (isAuthenticated) {
         return (
             <Routes>
                 <Route path = '/home' element = { < HomePage /> } />
-                <Route path = '*' element = { < Navigate path = '/home' replace /> } />
+                <Route path = '/test/:testId' element = { < TestByIdPage /> } />
+                <Route path = '*' element = { < Navigate to = '/home' replace /> } />
             </Routes>
         )
     }
@@ -26,7 +28,7 @@ export const useRoutes = (isAuthentificated) => {
             <Route path = '/' element = { < MainPage /> } />
             <Route path = '/registration' element = { < RegistrationPage />} />
             <Route path = '/login' element = { < AccountLoginPage /> } />
-            <Route path = '*' element = { < Navigate path = '/' replace /> }/>
+            <Route path = '*' element = { < Navigate to = '/' replace /> }/>
         </Routes>
     )
 }
